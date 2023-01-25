@@ -10,8 +10,8 @@ const cardImages = [
   { src: "", matched: false },
   { src: "", matched: false },
   { src: "", matched: false },
-  { src: "", matched: false },
-  { src: "", matched: false },
+  // { src: "", matched: false },
+  // { src: "", matched: false },
 ];
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
   //shuffle cards
   const shuffleCards = () => {
 
-    for (var i = 0; i<8; i++) {
+    for (var i = 0; i<6; i++) {
       cardImages[i].src = "/img/final/" + randomImg()
       cardImages[i].matched = false
     }

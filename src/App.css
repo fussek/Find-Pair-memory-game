@@ -2,7 +2,7 @@
 
 .App {
   max-width: 860px;
-  margin: 40px auto;
+  margin: 20px auto;
 }
 button {
   font-family: Dancing Script, sans-serif;
@@ -21,9 +21,9 @@ button:hover {
 }
 
 .card-grid {
-  margin-top: 40px;
+  margin-top: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
 
