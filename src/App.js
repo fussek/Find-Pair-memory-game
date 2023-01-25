@@ -1,14 +1,18 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import randomImg from "./components/randomImg";
 import SingleCard from "./components/SingleCard";
+const fs = require('fs')
 
 const cardImages = [
-  { src: "/img/helmet-1.png", matched: false },
-  { src: "/img/potion-1.png", matched: false },
-  { src: "/img/ring-1.png", matched: false },
-  { src: "/img/scroll-1.png", matched: false },
-  { src: "/img/shield-1.png", matched: false },
-  { src: "/img/sword-1.png", matched: false },
+  { src: "", matched: false },
+  { src: "", matched: false },
+  { src: "", matched: false },
+  { src: "", matched: false },
+  { src: "", matched: false },
+  { src: "", matched: false },
+  { src: "", matched: false },
+  { src: "", matched: false },
 ];
 
 function App() {
@@ -20,6 +24,12 @@ function App() {
 
   //shuffle cards
   const shuffleCards = () => {
+
+    for (var i = 0; i<8; i++) {
+      cardImages[i].src = "/img/final/" + randomImg()
+      cardImages[i].matched = false
+    }
+
     const shuffledCards = [...cardImages, ...cardImages] //spread syntax
       .sort(() => Math.random() - 0.5) // some cards get sorted and some not
       .map((card) => ({ ...card, id: Math.random() }));
@@ -57,7 +67,6 @@ function App() {
     }
   }, [choiceOne, choiceTwo])
 
-  console.log(cards)
 
   // reset choices & increase turn
   const resetTurn = () => {
@@ -73,8 +82,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Magic Match</h1>
-      <button onClick={shuffleCards}>New Game</button>
+      <h1 className="title">Znajdź drugiego Fusska :)</h1>
+      <button onClick={shuffleCards}>Nowa Gra</button>
 
       <div className="card-grid">
         {cards.map((card) => (
@@ -87,7 +96,7 @@ function App() {
           />
         ))}
       </div>
-      <p>Turns: {turns}</p>
+      <p>Ruchy: {turns}</p>
     </div>
   );
 }

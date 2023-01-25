@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
 .App {
   max-width: 860px;
   margin: 40px auto;
 }
 button {
+  font-family: Dancing Script, sans-serif;
   background: none;
   border: 2px solid #fff;
   padding: 6px 12px;
@@ -22,4 +25,8 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
+}
+
+.title {
+  text-shadow: 1px 1px 2px #8AA2A9;
 }

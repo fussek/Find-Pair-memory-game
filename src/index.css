@@ -1,12 +1,12 @@
   
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 /* base styles */
 body {
-  font-family: Raleway, sans-serif;
+  font-family: Dancing Script, sans-serif;
   margin: 0;
-  font-size: 1.5em;
+  font-size: 2em;
   text-align: center;
-  background: #231520;
+  background: #A1E5AB;
   color: #fff;
 }
