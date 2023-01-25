@@ -16,7 +16,7 @@ button {
   font-size: 1em;
 }
 button:hover {
-  background: #f25f90;
+  background: #f5a7a1;
   color: #fff;
 }
 
@@ -28,5 +28,5 @@ button:hover {
 }
 
 .title {
-  text-shadow: 1px 1px 2px #8AA2A9;
+  text-shadow: 1px 1px 2px #f5a7a1;
 }
