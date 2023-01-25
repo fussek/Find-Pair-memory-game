@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import randomImg from "./components/randomImg";
 import SingleCard from "./components/SingleCard";
-const fs = require('fs')
 
 const cardImages = [
   { src: "", matched: false },
