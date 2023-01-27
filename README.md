@@ -17,4 +17,4 @@ And then
 
 # Gameplay
 
-![Gameplay Gif](public\img\gameplay.gif)
+![Gameplay Gif](./public/img/gameplay.gif)
