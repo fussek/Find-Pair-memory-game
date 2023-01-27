@@ -83,7 +83,6 @@ function App() {
     <div className="App">
       <h1 className="title">Znajdź drugiego Fusska :)</h1>
       <button onClick={shuffleCards}>Nowa Gra</button>
-
       <div className="card-grid">
         {cards.map((card) => (
           <SingleCard 
