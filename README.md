@@ -17,4 +17,4 @@ And then
 
 # Gameplay
 
-![Alt text](public\img\gameplay.gif "Gameplay GIF")
+![Gameplay Gif](public\img\gameplay.gif)
